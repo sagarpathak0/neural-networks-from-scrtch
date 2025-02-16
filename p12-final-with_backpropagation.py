@@ -81,6 +81,44 @@ class Activation_Softmax_Loss_CategoricalCrossentropy:
 
         self.dinputs = (dvalues - y_true) / samples
 
+#OPTIMIZERS
+
+# Simple SGD Optimizer
+class Optimizer_SGD:
+    def __init__(self, learning_rate=0.01):
+        self.learning_rate = learning_rate
+
+    def update(self, layer):
+        layer.weights -= self.learning_rate * layer.dweights
+        layer.biases -= self.learning_rate * layer.dbiases
+
+# Momentum SGD Optimizer
+class MOptimizer_SGD:
+    def __init__(self, learning_rate=0.01, momentum=0.9):
+        self.learning_rate = learning_rate
+        self.momentum = momentum
+        self.weight_momentums = {}  # To store past weight updates
+        self.bias_momentums = {}  # To store past bias updates
+
+    def update(self, layer):
+        if layer not in self.weight_momentums:
+            self.weight_momentums[layer] = np.zeros_like(layer.weights)
+            self.bias_momentums[layer] = np.zeros_like(layer.biases)
+
+        # Compute momentum updates
+        self.weight_momentums[layer] = (
+            self.momentum * self.weight_momentums[layer] - self.learning_rate * layer.dweights
+        )
+        self.bias_momentums[layer] = (
+            self.momentum * self.bias_momentums[layer] - self.learning_rate * layer.dbiases
+        )
+
+        # Apply updates
+        layer.weights += self.weight_momentums[layer]
+        layer.biases += self.bias_momentums[layer]
+
+
+
 # Optimizer: Adam
 class Optimizer_Adam:
     def __init__(self, learning_rate=0.001, decay=0.001, beta1=0.9, beta2=0.999, epsilon=1e-7):
