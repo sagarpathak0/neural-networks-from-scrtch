@@ -1,9 +1,35 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.13">
   <diagram name="Page-1" id="kHwdLyBV5pop8FvYFpwH">
-    <mxGraphModel>
+    <mxGraphModel dx="1428" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="PVdDav53qMYlW7E-gHQP-3" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="65" width="360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="PVdDav53qMYlW7E-gHQP-4" value="&lt;font style=&quot;font-size: 45px;&quot;&gt;DIY AUTOML&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 45px;&quot;&gt;PLATFORM&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="45" y="50" width="350" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="PVdDav53qMYlW7E-gHQP-6" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;PROJECT REPORT&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="10" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PVdDav53qMYlW7E-gHQP-7" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Introduction&lt;/h1&gt;&lt;div&gt;&lt;p class=&quot;&quot; data-end=&quot;635&quot; data-start=&quot;23&quot;&gt;In today’s data-driven landscape, businesses generate substantial volumes of structured information—from daily sales figures and customer feedback to inventory levels and website analytics. Yet many organizations lack the technical expertise or resources to harness machine learning effectively. The DIY AutoML Platform addresses this gap by providing a lightweight, web‑based solution that automates the end‑to‑end workflow: from exploratory data analysis (EDA) and model recommendation to training, prediction, and interpretability—all without relying on high‑level libraries like scikit‑learn or TensorFlow.&lt;/p&gt;&lt;p class=&quot;&quot; data-end=&quot;1268&quot; data-start=&quot;637&quot;&gt;By building core algorithms from first principles (e.g., normal equations for linear regression, entropy‑based splits for decision trees, and backpropagation for neural networks), the platform not only offers transparency into each computational step but also fosters deeper understanding of the underlying mathematics. Users can simply upload a CSV, select their target variable, and let the system intelligently recommend and train the best‑fit model. Rich visualizations and custom feature‑importance metrics then clarify why the model makes certain predictions, empowering users to make data‑backed decisions with confidence.&lt;/p&gt;&lt;p class=&quot;&quot; data-end=&quot;1663&quot; data-start=&quot;1270&quot;&gt;This report details the system’s architecture, core components, and implementation strategies, illustrating how a math‑first AutoML engine can be both accessible and powerful for non‑technical stakeholders. The following sections will explore the platform’s design, algorithmic foundations, and real‑world use cases, culminating in a discussion of potential enhancements and future directions.&lt;/p&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="760" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="PVdDav53qMYlW7E-gHQP-8" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;Core Components&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="520" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PVdDav53qMYlW7E-gHQP-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PVdDav53qMYlW7E-gHQP-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PVdDav53qMYlW7E-gHQP-9" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;Frontend&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PVdDav53qMYlW7E-gHQP-10" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;ML Engine&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
